@@ -17,6 +17,11 @@ namespace LinkedList
             Console.WriteLine("********* Adding 30 between 56 and 70 **********");
             list.Insert(1, 30);
             list.Display();
+            //Remove 1st Element
+            Console.WriteLine();
+            Console.WriteLine("****** Remove First Element *******");
+            list.RemoveFirstNode();
+            list.Display();
             Console.ReadLine();
 
         }
