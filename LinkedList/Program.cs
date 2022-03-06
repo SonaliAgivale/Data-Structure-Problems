@@ -19,9 +19,9 @@ namespace LinkedList
             list.Display();
             //Remove 1st Element
             Console.WriteLine();
-            Console.WriteLine("****** Remove Last Node *******");
-            list.RemovaLastNode();
-            list.Display();
+            Console.WriteLine("****** Search Node *******");
+            Console.WriteLine(list.Search(30));//output is true because it is present in list
+            Console.WriteLine(list.Search(37));// output is false because not present in list.
             Console.ReadLine();
 
         }
