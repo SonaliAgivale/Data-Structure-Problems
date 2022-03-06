@@ -19,8 +19,8 @@ namespace LinkedList
             list.Display();
             //Remove 1st Element
             Console.WriteLine();
-            Console.WriteLine("****** Remove First Element *******");
-            list.RemoveFirstNode();
+            Console.WriteLine("****** Remove Last Node *******");
+            list.RemovaLastNode();
             list.Display();
             Console.ReadLine();
 
