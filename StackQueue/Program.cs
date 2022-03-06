@@ -10,18 +10,12 @@ namespace StackQueue
     {
         static void Main(string[] args)
         {
-            StackLinkedList stackLinkedList = new StackLinkedList();
-            stackLinkedList.Push(56);
-            stackLinkedList.Push(30);
-            stackLinkedList.Push(70);
-            Console.WriteLine("******* After Adding *******");
-            stackLinkedList.Display();
-            Console.WriteLine();
-            Console.WriteLine("------------------------------");
-            stackLinkedList.Push();
-            stackLinkedList.Pop();
-            stackLinkedList.IsEmpty();  
-            stackLinkedList.Display();
+            QueueLinkedList linkedListQueue = new QueueLinkedList();
+            linkedListQueue.Enqueue(56);
+            linkedListQueue.Enqueue(30);
+            linkedListQueue.Enqueue(70);
+            Console.WriteLine("------Queue List------");
+            linkedListQueue.Display();
             Console.ReadLine();
         }
     }
