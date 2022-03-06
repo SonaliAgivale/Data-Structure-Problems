@@ -154,5 +154,17 @@ namespace LinkedList
                 }
             }
         }
+        //Orederd List
+        public int Size()
+        {
+            int size = 0;
+            Node<T> temp = head;
+            while (temp != null)
+            {
+                size++;
+                temp = temp.next;
+            }
+            return size;
+        }
     }
 }
