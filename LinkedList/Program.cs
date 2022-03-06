@@ -25,6 +25,12 @@ namespace LinkedList
             list.Insert(pos + 1, 40);
             Console.WriteLine("******* After adding ********");
             list.Display();
+            Console.WriteLine();
+            Console.WriteLine("------------------");
+            Console.WriteLine("Delete the node");
+            list.Delete(40);
+            Console.WriteLine("******* After Deleting *******");
+            list.Display();
             Console.ReadLine();
 
         }

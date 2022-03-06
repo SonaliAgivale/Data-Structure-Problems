@@ -8,6 +8,12 @@ namespace LinkedList
 {
     internal class LinkedList<T> where T: IComparable<T>
     {
+        public bool IsEmpty()
+        {
+            if (head == null)
+                return true;
+            return false;
+        }
         public LinkedList()
         {
             head = null;
@@ -111,6 +117,8 @@ namespace LinkedList
             }
             return false;
         }
+
+        //Adding 40 after 30
         public int Update(T data)
         {
             int index = 0;
@@ -123,6 +131,28 @@ namespace LinkedList
                 index++;
             }
             return -1;
+        }
+
+        //UC9 Delete node from List
+        public void Delete(T data)
+        {
+            if (IsEmpty())
+                return;
+            if (head.data.CompareTo(data) == 0)
+                head = head.next;
+            else
+            {
+                Node<T> temp = head;
+                while (temp != null)
+                {
+                    if (temp.next.data.CompareTo(data) == 0)
+                    {
+                        temp.next = temp.next.next;
+                        return;
+                    }
+                    temp = temp.next;
+                }
+            }
         }
     }
 }
