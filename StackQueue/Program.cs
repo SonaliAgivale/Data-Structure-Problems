@@ -16,6 +16,12 @@ namespace StackQueue
             stackLinkedList.Push(70);
             Console.WriteLine("******* After Adding *******");
             stackLinkedList.Display();
+            Console.WriteLine();
+            Console.WriteLine("------------------------------");
+            stackLinkedList.Push();
+            stackLinkedList.Pop();
+            stackLinkedList.IsEmpty();  
+            stackLinkedList.Display();
             Console.ReadLine();
         }
     }
