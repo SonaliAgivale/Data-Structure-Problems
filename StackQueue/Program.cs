@@ -10,6 +10,13 @@ namespace StackQueue
     {
         static void Main(string[] args)
         {
+            StackLinkedList stackLinkedList = new StackLinkedList();
+            stackLinkedList.Push(56);
+            stackLinkedList.Push(30);
+            stackLinkedList.Push(70);
+            Console.WriteLine("******* After Adding *******");
+            stackLinkedList.Display();
+            Console.ReadLine();
         }
     }
 }
