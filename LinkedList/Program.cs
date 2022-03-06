@@ -10,6 +10,15 @@ namespace LinkedList
     {
         static void Main(string[] args)
         {
+            LinkedList list = new LinkedList();
+            Console.WriteLine();
+            list.Add(56);
+            list.Add(30);
+            list.Add(70);
+            Console.WriteLine("********* List **********");
+            list.Display();
+            Console.ReadLine();
+
         }
     }
 }
