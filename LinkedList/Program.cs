@@ -12,8 +12,8 @@ namespace LinkedList
         {
             LinkedList<int> list = new LinkedList<int>();
             Console.WriteLine();
-           list.Append(56);  
-           list.Append(70);
+            list.Append(56);  
+            list.Append(70);
             Console.WriteLine("********* Adding 30 between 56 and 70 **********");
             list.Insert(1, 30);
             list.Display();
