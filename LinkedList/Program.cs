@@ -14,14 +14,17 @@ namespace LinkedList
             Console.WriteLine();
             list.Append(56);  
             list.Append(70);
-            Console.WriteLine("********* Adding 30 between 56 and 70 **********");
+            Console.WriteLine("********* List on Node **********");
             list.Insert(1, 30);
             list.Display();
             //Remove 1st Element
             Console.WriteLine();
-            Console.WriteLine("****** Search Node *******");
-            Console.WriteLine(list.Search(30));//output is true because it is present in list
-            Console.WriteLine(list.Search(37));// output is false because not present in list.
+            Console.WriteLine("------------------------");
+            Console.WriteLine("Insert 40 after 30");
+            int pos = list.Update(30);
+            list.Insert(pos + 1, 40);
+            Console.WriteLine("******* After adding ********");
+            list.Display();
             Console.ReadLine();
 
         }

@@ -111,5 +111,18 @@ namespace LinkedList
             }
             return false;
         }
+        public int Update(T data)
+        {
+            int index = 0;
+            Node<T> temp = head;
+            while (temp != null)
+            {
+                if (temp.data.CompareTo(data) == 0)
+                    return index;
+                temp = temp.next;
+                index++;
+            }
+            return -1;
+        }
     }
 }
