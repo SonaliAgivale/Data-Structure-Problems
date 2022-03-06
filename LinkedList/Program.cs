@@ -12,10 +12,10 @@ namespace LinkedList
         {
             LinkedList<int> list = new LinkedList<int>();
             Console.WriteLine();
-            list.Add(56);
-            list.Add(30);
-            list.Add(70);
-            Console.WriteLine("********* Adding At Bigining **********");
+           list.Append(56);  
+           list.Append(70);
+            Console.WriteLine("********* Adding 30 between 56 and 70 **********");
+            list.Insert(1, 30);
             list.Display();
             Console.ReadLine();
 

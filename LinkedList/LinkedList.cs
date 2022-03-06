@@ -56,8 +56,27 @@ namespace LinkedList
                 temp = temp.next; //temp=null
             }
         }
-       
-        
+        //Insert Element Between
+        public void Insert(int position, T data)
+        {
+            Node<T> temp = head;
+            if (position < 0)
+            {
+                Console.WriteLine("Invalid position");
+                return;
+            }
+            if (position == 0)
+                Add(data);
+            else
+            {
+                Node<T> node = new Node<T>(data);
+                for (int i = 1; i < position; i++)
+                    temp = temp.next;
+                node.next = temp.next;
+                temp.next = node;
+            }
+        }
+
 
     }
 }
